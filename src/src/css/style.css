@@ -7,17 +7,8 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Museo Sans Bold';
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
-  src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
-  font-family: 'Museo Sans Light', sans-serif;
-  font-weight: 300;
+  font-family: sans-serif;
 }
 
 img {
@@ -25,7 +16,7 @@ img {
 }
 
 .container {
-  width: 1168px;
+  width: 1150px;
   margin: auto;
 }
 
@@ -76,7 +67,7 @@ img {
           align-items: center;
 }
 
-.navbar-info {
+.navbar__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,23 +77,7 @@ img {
   text-align: right;
 }
 
-.navbar-info__button {
-  border-radius: 10px;
-  border: none;
-  background-color: #ffd200;
-  font-size: 10px;
-  padding: 18px 28px;
-  font-size: 13px;
-  font-weight: 700;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-}
-
-.navbar-info__button_left {
-  margin-left: 30px;
-}
-
-.navbar-contacts__address {
+.navbar__address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,37 +88,34 @@ img {
   font-size: 13px;
 }
 
-.navbar-contacts__phone {
+.navbar__button {
+  margin-left: 30px;
+}
+
+.navbar__phone {
   display: inline-block;
   color: #333333;
   font-size: 20px;
+  font-weight: 700;
   text-decoration: none;
   margin-top: 6px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
 }
 
 @media (max-width: 768px) {
-  .navbar-contacts {
+  .navbar__contacts {
     display: none;
   }
-  .navbar-info__button {
-    font-family: 'Museo Sans Bold', sans-serif;
-    font-weight: 700;
+  .navbar__button {
     font-size: 10px;
     padding: 14px 25px;
     border-radius: 5px;
   }
-  .navbar-logo {
+  .navbar__logo {
     width: 90px;
   }
 }
 
 /*Импорт для внутренней отделки помещения*/
-.width-one {
-  width: 1250px;
-}
-
 .hero {
   padding: 50px 0;
 }
@@ -160,39 +132,28 @@ img {
 .hero-text {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  padding-right: 70px;
-  padding-left: 38px;
+  padding-right: 16px;
 }
 
 .hero-text__title {
   font-size: 41px;
+  font-weight: 600;
   line-height: 55px;
-  margin-bottom: 18px;
-  margin-top: -33px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
+  margin-bottom: 15px;
+  font-family: 'Museo Sans Light';
 }
 
 .hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
+  font-weight: 500;
   line-height: 65px;
-  margin-top: -2px;
-  margin-bottom: 62px;
-  margin-left: 4px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-weight: 700;
-}
-
-.hero-image {
-  width: 58%;
+  margin-bottom: 50px;
 }
 
 .hero-list {
   margin: 0;
   padding: 0;
-  margin-top: -12px;
-  margin-left: 3px;
 }
 
 .hero-list__item {
@@ -206,8 +167,8 @@ img {
 }
 
 .hero-list__image {
-  min-width: 37px;
-  height: 37px;
+  min-width: 40px;
+  height: 40px;
   border: 2px solid #ffd200;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,9 +188,7 @@ img {
 }
 
 .hero-list__text {
-  max-width: 245px;
-  font-size: 14px;
-  line-height: 1.7em;
+  max-width: 320px;
 }
 
 @media (max-width: 1200px) {
@@ -258,6 +217,7 @@ img {
   }
   .hero-text__subtitle {
     font-size: 16px;
+    font-weight: 700;
     margin-bottom: 25px;
     line-height: 1.4;
   }

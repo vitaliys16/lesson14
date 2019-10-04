@@ -1,3 +1,5 @@
+.width-one
+    width: 1250px
 .hero
     padding: 50px 0
     &-block
@@ -5,29 +7,37 @@
         align-items: center
     &-text
         flex-basis: 50%
-        padding-right: 16px
+        padding-right: 70px
+        padding-left: 38px
         &__title
             font-size: 41px
-            font-weight: 600
             line-height: 55px
-            margin-bottom: 15px
+            margin-bottom: 18px
+            margin-top: -33px
+            +bold
         &__subtitle
             display: inline-block
             font-size: 20px
-            font-weight: 500
             line-height: 65px
-            margin-bottom: 50px
+            margin-top: -2px
+            margin-bottom: 62px
+            margin-left: 4px
+            +bold
+    &-image
+        width: 58%
 
     &-list
         margin: 0
         padding: 0
+        margin-top: -12px
+        margin-left: 3px
         &__item
             display: flex
             align-items: center
             margin-bottom: 25px
         &__image
-            min-width: 40px
-            height: 40px
+            min-width: 37px
+            height: 37px
             border: 2px solid $main-color
             display: flex
             align-items: center
@@ -37,7 +47,9 @@
             img
                 width: auto
         &__text
-            max-width: 320px
+            max-width: 245px
+            font-size: 14px
+            line-height: 1.7em
 @media (max-width: 1200px)
     .hero
         &-block
@@ -55,7 +67,6 @@
                 margin-bottom: 3px
             &__subtitle
                 font-size: 16px
-                font-weight: 700
                 margin-bottom: 25px
                 line-height: 1.4
         &-list
